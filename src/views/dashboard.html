@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title><%= htmlWebpackPlugin.options.title %> | Story App</title>
+  </head>
+  <body>
+    <header>
+      <nav-app brandName="<%= brandName %>"></nav-app>
+    </header>
+
+    <main>
+      <div class="container py-5">
+        <h1 class="text-center mt-5">Story List</h1>
+        <div class="row row-cols-lg-3 row-cols-md-2" id="recordsCard"></div>
+        <div id="pagination" class="text-center mt-3">
+          <button id="previousPage" class="btn btn-primary">Previous</button>
+          <span id="pageNumbers"></span>
+          <button id="nextPage" class="btn btn-primary">Next</button>
+        </div>
+      </div>
+      <modal-detail-story
+        title="Rincian Story"
+        class="modal fade"
+        id="recordDetailModal"
+        data-bs-backdrop="static"
+        data-bs-keyboard="false"
+        tabindex="-1"
+      ></modal-detail-story>
+    </main>
+    <footer class="footer-container">
+      <footer-app></footer-app>
+    </footer>
+  </body>
+</html>
