@@ -1,6 +1,6 @@
 @use '../abstracts/mixins' as mix;
 
-.footer-container {
+footer .footer-container {
   @include mix.padding;
   background-color: grey;
 

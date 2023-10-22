@@ -20,13 +20,8 @@ class NavApp extends LitElement {
 
     .navbar .container .container-left {
       font-size: 18px;
-      font-weight: 400;
+      font-weight: 700;
       cursor: pointer;
-      border-bottom: 1px solid rgb(245, 245, 245);
-    }
-
-    .navbar .container .container-left:hover {
-      color: grey;
     }
 
     .navbar .container .container-right {
@@ -78,8 +73,7 @@ class NavApp extends LitElement {
   }
 
   _goToDashboard() {
-    window.location.href = '/';
-    document.querySelector;
+    window.location.href = '/index.html';
   }
 }
 

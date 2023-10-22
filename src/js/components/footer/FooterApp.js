@@ -20,5 +20,4 @@ class FooterApp extends LitWithoutShadowDom {
   }
 }
 
-
 customElements.define('footer-app', FooterApp);

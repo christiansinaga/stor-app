@@ -15,10 +15,6 @@ class NavLink extends LitElement {
       color: black;
     }
 
-    li a:hover {
-      color: grey;
-    }
-
     @media screen and (max-width: 920px) {
       li {
         padding: 12px;
@@ -31,7 +27,7 @@ class NavLink extends LitElement {
       }
 
       li a {
-        font-size: 18px;
+        font-size: 12px;
       }
 
       li a:hover {

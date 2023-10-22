@@ -12,20 +12,23 @@
     "prettier:check": "prettier --check .",
     "prettier:format": "prettier --write .",
     "localize:extract": "npx lit-localize extract",
-    "localize:build": "lit-localize build"
+    "localize:build": "lit-localize build",
+    "eslint:check": "eslint .",
+    "eslint:fix": "eslint --fix ."
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "@babel/core": "^7.20.2",
-    "@babel/preset-env": "^7.20.2",
-    "@lit/localize-tools": "^0.7.0",
+    "@babel/core": "^7.23.2",
+    "@babel/plugin-proposal-class-properties": "^7.18.6",
+    "@babel/preset-env": "^7.23.2",
     "autoprefixer": "^10.4.13",
     "babel-loader": "^9.1.0",
     "clean-webpack-plugin": "^4.0.0",
     "copy-webpack-plugin": "^11.0.0",
     "css-loader": "^6.7.2",
+    "eslint": "^8.51.0",
     "html-webpack-plugin": "^5.5.0",
     "postcss-loader": "^7.0.1",
     "prettier": "^3.0.3",
@@ -40,9 +43,12 @@
   "dependencies": {
     "@lit/localize": "^0.12.0",
     "@popperjs/core": "2.11.6",
+    "axios": "^1.5.1",
     "bootstrap": "5.2.2",
     "bootstrap-icons": "^1.11.1",
     "date-fns": "^2.30.0",
-    "lit": "^3.0.0"
+    "firebase": "^10.5.0",
+    "lit": "^3.0.0",
+    "sweetalert2": "^11.7.32"
   }
 }
